@@ -1,0 +1,22 @@
+[project]
+name = "ai-agent"
+version = "0.1.0"
+description = "Guided project from the boot.dev: Build an AI agent in Python"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai==1.12.1",
+    "pre-commit>=4.6.0",
+    "python-dotenv==1.1.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = ["F403", "F405", "F841"]
+
+[tool.ruff.format]
+quote-style = "double"
